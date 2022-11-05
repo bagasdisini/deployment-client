@@ -311,7 +311,7 @@ function Page() {
                   navigate(`/detail-restaurant/${p.id}`);
                 }}
               >
-                {p.image === "http://localhost:5000/uploads/" ? (
+                {p.image === "https://res.cloudinary.com/dy5ntbnnh/image/upload/v1667623731/waysfood/" ? (
                   <img
                     src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
                     alt=""
@@ -362,7 +362,7 @@ function Page() {
                   handleShow1();
                 }}
               >
-                {p.image === "http://localhost:5000/uploads/" ? (
+                {p.image === "https://res.cloudinary.com/dy5ntbnnh/image/upload/v1667623731/waysfood/ " ? (
                   <img
                     src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
                     alt=""

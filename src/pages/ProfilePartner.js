@@ -67,7 +67,7 @@ function ProfilePartner() {
             <div className="d-flex">
               <div className="d-flex flex-column">
                 <h3 className="fw-bold mb-4">Profile Partner</h3>
-                {state.user.image === "http://localhost:5000/uploads/" ? (
+                {state.user.image === "https://res.cloudinary.com/dy5ntbnnh/image/upload/v1667623731/waysfood/ " ? (
                   <img
                     src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
                     width="200px"
