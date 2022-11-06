@@ -89,52 +89,17 @@ function Cart({
     try {
       e.preventDefault();
 
-      // const body = JSON.stringify(form);
-
       const data = await API.post("/transaction", form, {
         headers: {
           Authorization: `Bearer ${localStorage.token}`,
         },
       });
 
-      // const token = data.data.token;
-
-      // window.snap.pay(token, {
-      //   onSuccess: function (result) {
-      //     console.log(result);
-      //     navigate("/my-profile");
-      //   },
-      //   onPending: function (result) {
-      //     console.log(result);
-      //     navigate("/my-profile");
-      //   },
-      //   onError: function (result) {
-      //     console.log(result);
-      //   },
-      //   onClose: function () {
-      //     alert("you closed the popup without finishing the payment");
-      //   },
-      // });
-
       emptyCart();
     } catch (error) {
       console.log(error);
     }
   };
-
-  // useEffect(() => {
-  //   const midtransScriptUrl = "https://app.sandbox.midtrans.com/snap/snap.js";
-  //   const myMidtransClientKey = "SB-Mid-client-13cP6QJtzCgJ6ixQ";
-  
-  //   let scriptTag = document.createElement("script");
-  //   scriptTag.src = midtransScriptUrl;
-  //   scriptTag.setAttribute("data-client-key", myMidtransClientKey);
-  
-  //   document.body.appendChild(scriptTag);
-  //   return () => {
-  //     document.body.removeChild(scriptTag);
-  //   };
-  // }, []);
 
   return (
     <div>
