@@ -85,10 +85,8 @@ function Cart({
     location: `${position.lat}, ${position.lng}`,
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     try {
-      e.preventDefault();
-
       const body = JSON.stringify(form);
 
       const data = await API.post("/transaction", form, {
