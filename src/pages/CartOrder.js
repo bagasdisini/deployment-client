@@ -336,8 +336,8 @@ function Cart({
                   border: "none",
                 }}
                 className="px-5"
-                onClick={() => {
-                  handleSubmit();
+                onClick={(e) => {
+                  handleSubmit(e);
                   navigateProfile();
                 }}
               >
