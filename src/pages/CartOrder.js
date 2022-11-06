@@ -337,7 +337,7 @@ function Cart({
                 }}
                 className="px-5"
                 onClick={() => {
-                  handleSubmit.mutate();
+                  handleSubmit();
                 }}
               >
                 Order!
