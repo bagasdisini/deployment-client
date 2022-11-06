@@ -91,21 +91,22 @@ function Cart({
 
       const body = JSON.stringify(form);
 
-
       const data = await API.post("/transaction", form, {
         headers: {
           Authorization: `Bearer ${localStorage.token}`,
         },
       });
 
+      const token = data.data.token;
+
       window.snap.pay(token, {
         onSuccess: function (result) {
           console.log(result);
-          history.push("/my-profile");
+          navigate("/my-profile");
         },
         onPending: function (result) {
           console.log(result);
-          history.push("/my-profile");
+          navigate("/my-profile");
         },
         onError: function (result) {
           console.log(result);
@@ -336,7 +337,7 @@ function Cart({
                 }}
                 className="px-5"
                 onClick={() => {
-                  handleBuy.mutate();
+                  handleSubmit.mutate();
                 }}
               >
                 Order!
