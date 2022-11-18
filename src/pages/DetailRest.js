@@ -60,7 +60,7 @@ function Detail({ addItem }) {
         className="d-flex justify-content-center align-items-center mx-auto"
         style={{ marginTop: "10px" }}
       >
-        <div className="m-5" style={{ width: "70%" }}>
+        <div className="m-5" style={{ width: "85%" }}>
           <div className="d-flex justify-content-between">
             <h2 className="fw-bold mb-4">Menu</h2>
             <Dropdown>
