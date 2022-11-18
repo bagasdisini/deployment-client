@@ -92,7 +92,6 @@ function Profile() {
                     <div>
                       <p
                         className="fw-bold"
-                        style={{ wordBreak: "break-all", width: "90%" }}
                       >
                         {p.product}
                       </p>
